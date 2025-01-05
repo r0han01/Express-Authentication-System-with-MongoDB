@@ -1,0 +1,93 @@
+<!-- views/dashboard.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        .wrap {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        a {
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .success-message {
+            background-color: #e8f5e9;
+            border: 1px solid #4CAF50;
+            padding: 5px 10px;
+            color: #388e3c;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Stylish font */
+            font-weight: bold;
+            /* Make the text bold */
+            font-size: 18px;
+            /* Larger text for better visibility */
+            text-transform: uppercase;
+            /* Uppercase for emphasis */
+            letter-spacing: 1px;
+            /* Spaced out letters for a clean look */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow effect */
+        }
+
+        .error-message {
+            background-color: #ffebee;
+            border: 1px solid #f44336;
+            padding: 15px;
+            color: #d32f2f;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Welcome, <%= username %> !!</h1>
+        <div class="success-message">
+            <p>You have successfully logged in!</p>
+        </div>
+        <a href="/">Go To Home 🏠 </a>
+    </div>
+</body>
+
+</html>

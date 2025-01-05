@@ -1,0 +1,143 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Ubuntu:wght@300&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #444;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  border: 0;
+  border-bottom: 2px solid #ff5407;
+  width: 100%;
+  height: 36px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  background: transparent;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #14a03d;
+  background: rgba(255, 234, 226, 0.8);
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #14a03d;
+}
+
+label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  font-size: 18px;
+  color: #ff5407;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  padding: 10px 20px;
+  margin-top: 20px;
+  position: relative;
+  outline: 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.submit {
+  background: #ff5407;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #14a03d;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Popup modal styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+  }
+  
+  .popup-content p {
+    font-size: 18px;
+    color: #f44336;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #d32f2f;
+  }
+  
