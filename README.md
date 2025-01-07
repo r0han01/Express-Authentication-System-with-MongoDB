@@ -26,6 +26,8 @@ This is a simple Login and Registration system built using **Node.js**, **Expres
   
 </div>
 
+<br> </br>
+
 The project covers essential aspects of web development, such as user authentication, data validation, form handling, and error handling. It follows common practices for building secure, scalable web applications with JavaScript.
 
 ## Features
