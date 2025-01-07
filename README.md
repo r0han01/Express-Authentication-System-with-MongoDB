@@ -129,8 +129,8 @@ In addition to password security, the project demonstrates important web develop
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/login-app.git
-   cd login-app
+   git clone https://github.com/r0han01/Express-Authentication-System-with-MongoDB.git
+   cd Express-Authentication-System-with-MongoDB
 
 2. Install the required dependencies:
 
