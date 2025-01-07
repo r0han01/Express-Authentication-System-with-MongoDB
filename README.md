@@ -1,8 +1,30 @@
 # Login Application (MERN Stack)
+###
+![ScreenShot Tool -20250107043508](https://github.com/user-attachments/assets/c1cfddea-af89-4f62-8d39-bd8baf882cf1)
+###
 
 ## Project Overview
 
 This is a simple Login and Registration system built using **Node.js**, **Express.js**, **MongoDB**, and **EJS** templating engine. It allows users to register, log in, and access a dashboard page after successfully logging in. This project demonstrates how to create a secure authentication system with password hashing and user data management using MongoDB.
+
+<div align="center">
+  <h3> Contributed Using These Languages </h3>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="JavaScript" />
+    <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="HTML5" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="CSS3" />
+    <img width="12" />
+  <img src="https://github.com/devicons/devicon/blob/v2.16.0/icons/express/express-original.svg" height="30" alt="Express" />
+  <img width="12" />
+  <img src="https://github.com/devicons/devicon/blob/v2.16.0/icons/docker/docker-original.svg" height="30" alt="Docker" />
+  <img width="12" />
+    <img width="12" />
+  <img src="https://github.com/devicons/devicon/blob/v2.16.0/icons/nodejs/nodejs-plain-wordmark.svg" height="30" alt="NodeJS" />
+    <img width="12" />
+  <img src="https://github.com/devicons/devicon/blob/v2.16.0/icons/mongodb/mongodb-plain-wordmark.svg" height="30" alt="mongodb" />
+  
+</div>
 
 The project covers essential aspects of web development, such as user authentication, data validation, form handling, and error handling. It follows common practices for building secure, scalable web applications with JavaScript.
 
@@ -31,6 +53,11 @@ The project covers essential aspects of web development, such as user authentica
 The project was initialized with **Node.js** and **Express.js** as the core backend technologies. These technologies provide an efficient platform for building web applications and handling HTTP requests.
 
 MongoDB was chosen as the database to store user information because of its flexibility and scalability. **Mongoose**, a library that makes working with MongoDB more efficient, was used for creating the schema and querying the database.
+###
+
+![ScreenShot Tool -20250104005845](https://github.com/user-attachments/assets/1d5e2c5e-4dd2-48f3-9cde-af72bb8397e8)
+
+###
 
 ### Step 2: User Registration
 
@@ -38,8 +65,13 @@ On the **/register** route, users can create an account by entering a valid **us
 
 1. **Username Validation**: Ensures the username is unique and not already taken.
 2. **Password Validation**: Ensures the password is at least 6 characters long.
-
+###
+![ScreenShot Tool -20250104005845](https://github.com/user-attachments/assets/91107692-be68-4a5b-b51a-3d284dbdf9e6)
+###
 If the username is unique and the password is valid, the password is hashed using **bcryptjs** and saved in the MongoDB database along with the username.
+###
+![Screenshot from 2025-01-05 09-39-25](https://github.com/user-attachments/assets/76150c31-93fb-4606-aeff-deb9d8debbdb)
+###
 
 ### Step 3: User Login
 
@@ -48,19 +80,31 @@ When a user tries to log in, the system:
 1. Checks if the entered **username** exists in the database.
 2. Compares the entered password with the stored hashed password using **bcryptjs**.
 3. If the login is successful, the user is redirected to the **dashboard** page.
+![ScreenShot Tool -20250105095123](https://github.com/user-attachments/assets/d4c0b7e6-79f1-44a7-a44f-8c2632c29bc9)
 
 ### Step 4: Error Handling and Validation
 
 - Invalid inputs, such as short usernames or passwords, are detected at the registration and login stages.
 - If a user tries to log in with an incorrect username or password, they are redirected to the registration page with a helpful error message: "User not registered. Please create an account."
+###
+![ScreenShot Tool -20250105104619 (2)](https://github.com/user-attachments/assets/cee77559-d617-4b3d-bd57-7b7ef60ba7f6)
+###
+![ScreenShot Tool -20250105104946](https://github.com/user-attachments/assets/db93de66-53df-49d3-8d4e-7d44f7884bc3)
+
+###
 
 ### Step 5: User Feedback
 
 To improve user experience, helpful error messages are shown whenever there is a problem with the input or login. For example, if a user tries to register with a username that already exists, they are shown the error message: "Username already exists. Please choose another."
 
+
 ### Step 6: Dashboard
 
 Once a user successfully logs in, they are redirected to a **dashboard** page that welcomes them by their username. It provides a sense of completion, letting the user know they have logged in successfully.
+###
+![ScreenShot Tool -20250105095123](https://github.com/user-attachments/assets/492b9ca7-34bb-4e09-9aa2-a5d28667429b)
+
+###
 
 ## Importance of This Project
 
