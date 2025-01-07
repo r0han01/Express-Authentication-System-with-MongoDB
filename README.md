@@ -66,7 +66,6 @@ On the **/register** route, users can create an account by entering a valid **us
 1. **Username Validation**: Ensures the username is unique and not already taken.
 2. **Password Validation**: Ensures the password is at least 6 characters long.
 ###
-![ScreenShot Tool -20250104005845](https://github.com/user-attachments/assets/91107692-be68-4a5b-b51a-3d284dbdf9e6)
 ###
 If the username is unique and the password is valid, the password is hashed using **bcryptjs** and saved in the MongoDB database along with the username.
 ###
